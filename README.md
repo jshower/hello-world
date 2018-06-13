@@ -33,7 +33,7 @@
 | m  | 数量词   | q    | 量词     | r    | 代词     | p   | 介词    |
 | c  | 连词    | u     | 助词     | xc  | 其他虚词  | w   | 标点符号 |
 
-    <table align="center" width=80%>
+<table align="center" width=80%>
         <tr>
             <th rowspan="2">值班人员</th>
             <th>星期一</th>
@@ -45,7 +45,7 @@
             <td>张明</td>
             <td>王平</td>
         </tr>
-    </table>
+</table>
 
 <p align="center">
 图1. 词性标注说明
