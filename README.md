@@ -20,7 +20,7 @@
 
 <div>
 <p align="center">
-<table align="center" width="80%"><tr><th>星期一</th><th>星期二</th><th>星期三</th></tr><tr><td>李强</td><td>张明</td><td>王平</td></tr></table><br/>
+<table align="center" width="800"><tr><th>星期一</th><th>星期二</th><th>星期三</th></tr><tr><td>李强</td><td>张明</td><td>王平</td></tr></table><br/>
 图1. 词性标注说明
 </p>
 </div>
