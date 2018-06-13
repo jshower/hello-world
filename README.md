@@ -1,4 +1,4 @@
-运行本目录下的程序示例需要使用PaddlePaddle v0.13.0 版本。如果您的PaddlePaddle安装版本低于此要求，请按照[安装文档]（http://www.paddlepaddle.org/docs/develop/documentation/zh/build_and_install/pip_install_cn.html）中的说明更新PaddlePaddle安装版本。
+运行本目录下的程序示例需要使用PaddlePaddle v0.13.0 版本。如果您的PaddlePaddle安装版本低于此要求，请按照[安装文档](http://www.paddlepaddle.org/docs/develop/documentation/zh/build_and_install/pip_install_cn.html)中的说明更新PaddlePaddle安装版本。
 
 以下是本例的简要目录结构及说明
 ```text
