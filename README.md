@@ -18,12 +18,10 @@
 命名实体识别（Named Entity Recognition，NER）又称作“专名识别”，是指识别自然语言文本中具有特定意义的实体，主要包括人名、地名、机构名、专有名词等。
 我们将这三个任务统一为一个序列标注任务，称为词法分析任务，通过采用深度神经网络利用标注语料进行训练，以端到端的模型作为任务的解决方案。
 
-<div>
-<p align="center">
-<table align="center" width="800"><tr><th>星期一</th><th>星期二</th><th>星期三</th></tr><tr><td>李强</td><td>张明</td><td>王平</td></tr></table><br/>
-图1. 词性标注说明
-</p>
-</div>
+
+<center>
+<table align="center" width="800"><tr><th>星期一</th><th>星期二</th><th>星期三</th></tr><tr><td>李强</td><td>张明</td><td>王平</td></tr></table>
+</center>
 
 <p align="center">
 <img src="images/pos_introduction.png" width="80%" align="center"/><br/>
