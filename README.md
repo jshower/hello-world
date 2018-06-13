@@ -19,18 +19,7 @@
 我们将这三个任务统一为一个序列标注任务，称为词法分析任务，通过采用深度神经网络利用标注语料进行训练，以端到端的模型作为任务的解决方案。
 
 <p align="center">
-<table align="center" width="80%">
-<tr>
-<th>星期一</th>
-<th>星期二</th>
-<th>星期三</th>
-</tr>
-<tr>
-<td>李强</td>
-<td>张明</td>
-<td>王平</td>
-</tr>
-</table><br/>
+<table align="center" width="80%"><tr><th>星期一</th><th>星期二</th><th>星期三</th></tr><tr><td>李强</td><td>张明</td><td>王平</td></tr></table><br/>
 图1. 词性标注说明
 </p>
 
