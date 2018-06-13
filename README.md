@@ -19,6 +19,22 @@
 我们将这三个任务统一为一个序列标注任务，称为词法分析任务，通过采用深度神经网络利用标注语料进行训练，以端到端的模型作为任务的解决方案。
 
 <p align="center">
+<table align="center" width="80%">
+<tr>
+<th>星期一</th>
+<th>星期二</th>
+<th>星期三</th>
+</tr>
+<tr>
+<td>李强</td>
+<td>张明</td>
+<td>王平</td>
+</tr>
+</table><br/>
+图1. 词性标注说明
+</p>
+
+<p align="center">
 <img src="images/pos_introduction.png" width="80%" align="center"/><br/>
 图1. 词性标注说明
 </p>
@@ -34,22 +50,7 @@
 | c  | 连词    | u     | 助词     | xc  | 其他虚词  | w   | 标点符号 |
 
 ddd
-<p align="center">
-<table align="center" width="80%">
-<tr>
-<th>星期一</th>
-<th>星期二</th>
-<th>星期三</th>
-</tr>
-<tr>
-<td>李强</td>
-<td>张明</td>
-<td>王平</td>
-</tr>
-</table>
-<br/>
-图1. 词性标注说明
-</p>
+
 
 
 根据模型输出的序列标注结果可以直接得到词汇和实体的边界和类别。
