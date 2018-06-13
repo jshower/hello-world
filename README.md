@@ -33,26 +33,24 @@
 | m  | 数量词   | q    | 量词     | r    | 代词     | p   | 介词    |
 | c  | 连词    | u     | 助词     | xc  | 其他虚词  | w   | 标点符号 |
 
-
+ddd
 <p align="center">
-    <table align="center" width="80%">
-        <tr>
-            <th>星期一</th>
-            <th>星期二</th>
-            <th>星期三</th>
-        </tr>
-        <tr>
-            <td>李强</td>
-            <td>张明</td>
-            <td>王平</td>
-        </tr>
-    </table>
-    <br/>
-</p>
-
-<p align="center">
+<table align="center" width="80%">
+<tr>
+<th>星期一</th>
+<th>星期二</th>
+<th>星期三</th>
+</tr>
+<tr>
+<td>李强</td>
+<td>张明</td>
+<td>王平</td>
+</tr>
+</table>
+<br/>
 图1. 词性标注说明
 </p>
+
 
 根据模型输出的序列标注结果可以直接得到词汇和实体的边界和类别。
 对于序列标注问题，通常：使用基于RNN的网络结构学习特征，将学习到的特征接入CRF完成序列标注。实际上是将传统CRF中的线性模型换成了非线性神经网络。沿用CRF的出发点是：CRF使用句子级别的似然概率，能够更好的解决标记偏置问题。本例也将基于此思路建立模型。
