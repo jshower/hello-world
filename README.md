@@ -1,5 +1,6 @@
 运行本目录下的程序示例需要使用PaddlePaddle v0.13.0 版本。如果您的PaddlePaddle安装版本低于此要求，请按照[安装文档]（http://www.paddlepaddle.org/docs/develop/documentation/zh/build_and_install/pip_install_cn.html）中的说明更新PaddlePaddle安装版本。
 
+以下是本例的简要目录结构及说明
 ```text
 .
 ├── images               # README 文档中的图片
@@ -51,11 +52,10 @@
     2. 对输入文本中特殊字符进行转换的字典，在`data`目录下，对应`q2b.utf8.dict`
     3. 标记标签的词典,在`data`目录下，对应`label.utf8.dict`
    
-我们在`reader.py`脚本中完成对原始数据的处理以及读取，主要包括下面几个步骤:
-
-1. 从原始数据文件中抽取出句子和标签，构造句子序列和标签序列；
-2. 将句子序列中的特殊字符进行转换
-3. 依据词典获取词对应的整数索引。
++ 我们在`reader.py`脚本中完成对原始数据的处理以及读取，主要包括下面几个步骤:
+    1. 从原始数据文件中抽取出句子和标签，构造句子序列和标签序列；
+    2. 将句子序列中的特殊字符进行转换
+    3. 依据词典获取词对应的整数索引。
 
 
 ## 模型训练与预测
@@ -68,14 +68,14 @@
     ```python
     python python/train.py -h
     ```
-查看训练脚本支持的不同选项，通过设置不同的选项，对自己的训练实现定制化。其中以下选项可能较为常用：
-```text
---traindata_dir           指定训练数据所在的路径
---testdata_dir            指定验证数据所在的路径
---model_save_dir          指定模型保存的路径
---corpus_type_list        指定使用训练数据目录下哪些类型的语料，如果设置为”“，则会使用全部语料
---corpus_proportion_list  指定使用训练数据目录下每种语料的比例，与corpus_type_list中的语料类型一一对应
-```
+    查看训练脚本支持的不同选项，通过设置不同的选项，对自己的训练实现定制化。其中以下选项可能较为常用：
+    ```text
+    --traindata_dir           指定训练数据所在的路径
+    --testdata_dir            指定验证数据所在的路径
+    --model_save_dir          指定模型保存的路径
+    --corpus_type_list        指定使用训练数据目录下哪些类型的语料，如果设置为”“，则会使用全部语料
+    --corpus_proportion_list  指定使用训练数据目录下每种语料的比例，与corpus_type_list中的语料类型一一对应
+    ```
 3. 运行命令 `python python/train.py` ，**需要注意：直接运行使用的是示例数据及默认参数，实际应用时请替换真实的标记数据并修改相应配置项。** 我们可以使用不同选项来改变训练的配置，如只使用新闻语料和标题语料，可以使用命令`python python/train.py --corpus_type_list news title --corpus_proportion_list 0.5 0.5`。
 
 
